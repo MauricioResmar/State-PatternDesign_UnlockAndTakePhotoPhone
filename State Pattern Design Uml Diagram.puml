@@ -1,0 +1,51 @@
+@startuml
+class EstadoCamaraAbierta {
++ String desbloquear()
++ String abrirCamara()
++ String hacerFoto()
+}
+
+class EstadoHacerFoto {
++ String desbloquear()
++ String abrirCamara()
++ String hacerFoto()
+}
+
+class Main {
++ {static} void main(String[])
+}
+
+class EstadoDesbloqueado {
++ String desbloquear()
++ String abrirCamara()
++ String hacerFoto()
+}
+
+class Telefono {
++ Estado estado
++ void cambiaEstado(Estado)
++ Estado getEstado()
+}
+
+
+class EstadoBloqueado {
++ String desbloquear()
++ String abrirCamara()
++ String hacerFoto()
+}
+
+abstract class Estado {
++ Telefono telefono
++ {abstract}String desbloquear()
++ {abstract}String abrirCamara()
++ {abstract}String hacerFoto()
+}
+
+
+
+
+Estado <|-- EstadoCamaraAbierta
+Estado <|-- EstadoHacerFoto
+Estado <|-- EstadoDesbloqueado
+Estado <|-- EstadoBloqueado
+@enduml

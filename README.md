@@ -42,7 +42,9 @@ Facilitates dynamic behavior change: The object can change its behavior at runti
 
 Increase in the number of classes: Since each state has its own implementation, the number of classes can increase considerably, which can make the project more complex.
 
-Initial complexity: Although it simplifies the code in the long term, the initial implementation of the State pattern can be more complex, especially in simple systems that do not require transitions between many states.
+**Initial complexity:** 
+
+Although it simplifies the code in the long term, the initial implementation of the State pattern can be more complex, especially in simple systems that do not require transitions between many states.
 
 Difficult to understand in simple systems: For small or low-state projects, it can seem like over-engineering and complicate the design without offering much benefit.
 
@@ -57,3 +59,5 @@ Difficult to understand in simple systems: For small or low-state projects, it c
 **Observer pattern:** Can be useful if you want to notify other objects about state changes in an object. For example, an object that changes state could inform other interested objects using Observer.
 
 The combination of these patterns depends on the problem you are solving, but together they can create flexible and well-structured systems.
+
+This is ok...
